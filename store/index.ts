@@ -1,6 +1,11 @@
 import { InjectionKey, useStore as baseUseStore } from '@nuxtjs/composition-api'
+import type { CartState } from './shop/cart'
 
-export interface RootState {}
+export interface RootState {
+  shop: {
+    cart: CartState
+  }
+}
 
 export const state = () => ({})
 
